@@ -1,0 +1,204 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <title>Digital Arts - Signage and Printing</title>
+  </head>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a class="navbar-brand" href="#">Digital Arts</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="dropdown">
+        <button class="translate-btn">Translate</button>
+        <div class="dropdown-menu">
+          <a href="#" onclick="translateToHindi()">हिन्दी</a>
+          <a href="#" onclick="translateToEnglish()">English</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header id="home" class="hero-section mb-5">
+    <div class="hero-overlay" style="background-image: url('assets/billboard1.jpg'); background-size: cover; background-position: center;">
+      <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 60vh; font-family: 'Poppins', sans-serif; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">
+        <h1 class="display-3 fw-bold">Bringing Ideas to Light</h1>
+        <p class="lead">Expert signage and printing solutions from Port Blair</p>
+        <a href="#about" class="btn btn-warning mt-3 px-4 py-2">Learn More</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- About Section -->
+<section id="about" class="about-section mt-5 mb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>We are Digital Arts, a creative signage and advertising agency based in Port Blair. From LED boards to custom T-shirt printing, we turn your ideas into impactful visuals.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/aboutus2.jpg" alt="About Us" class="img-fluid rounded" style="width: 100%; max-height: 400px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="services-section mb-5">
+      <div class="container">
+          <h2 style="text-align: center;">Our Services</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/websitedev1.jpg" class="card-img-top" alt="Website Development">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">Website Development</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/ledsign1.jpg" class="card-img-top" alt="LED Sign Boards">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">LED Sign Boards</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/flexprint1.jpg" class="card-img-top" alt="Flex Printing">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">Flex Printing</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/nameplate1.jpg" class="card-img-top" alt="Acrylic Name Plates">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">Acrylic Name Plates</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/lazerpla1.jpg" class="card-img-top" alt="CNC & Laser Cutting">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">CNC & Laser Cutting</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="#contact" style="text-decoration: none;">
+                <div class="card h-100" style="position: relative; overflow: hidden; cursor: pointer;">
+                  <img src="assets/mugprint.jpg" class="card-img-top" alt="Mug & T-Shirt Printing">
+                  <div class="card-overlay-text position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white px-2 py-1 rounded-0">
+                    <h5 class="card-title text-center m-0">Mug & T-Shirt Printing</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Contact Section -->
+<section id="contact" class="contact-section mb-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="card p-4 shadow-sm" style="max-width: 400px; width: 100%;">
+            <form class="contact-form" onsubmit="return handleSubmit(event);">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea rows="5" class="form-control" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="ps-md-4">
+            <p class="contact-info">
+              <strong>Phone:</strong> 99332 11177<br>
+              <strong>Address:</strong> Sri Vijaya Puram, Port Blair<br>
+              <strong>Email:</strong> digitalarts@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Digital Arts. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function translateToHindi() {
+      document.querySelector('.hero-section h1').innerText = "विचारों को रोशनी में बदलना";
+      document.querySelector('.hero-section p').innerText = "पोर्ट ब्लेयर से विशेषज्ञ साइनेज और प्रिंटिंग समाधान";
+      document.querySelector('#about h2').innerText = "हमारे बारे में";
+      document.querySelector('#about p').innerText = "हम डिजिटल आर्ट्स हैं, पोर्ट ब्लेयर स्थित एक रचनात्मक साइनेज और विज्ञापन एजेंसी। एलईडी बोर्ड से लेकर कस्टम टी-शर्ट प्रिंटिंग तक, हम आपके विचारों को प्रभावशाली दृश्यों में बदलते हैं।";
+      document.querySelector('#services h2').innerText = "हमारी सेवाएँ";
+      document.querySelectorAll('.card-title')[0].innerText = "वेबसाइट विकास";
+      document.querySelectorAll('.card-title')[1].innerText = "एलईडी साइनेज बोर्ड";
+      document.querySelectorAll('.card-title')[2].innerText = "फ्लेक्स प्रिंटिंग";
+      document.querySelectorAll('.card-title')[3].innerText = "ऐक्रेलिक नेम प्लेट्स";
+      document.querySelectorAll('.card-title')[4].innerText = "सीएनसी और लेज़र कटिंग";
+      document.querySelectorAll('.card-title')[5].innerText = "मग और टी-शर्ट प्रिंटिंग";
+      document.querySelector('#contact h2').innerText = "संपर्क करें";
+      document.querySelector('.contact-info').innerHTML = "<strong>फ़ोन:</strong> 99332 11177<br><strong>पता:</strong> श्री विजया पुरम, पोर्ट ब्लेयर<br><strong>ईमेल:</strong> digitalarts@gmail.com";
+    }
+
+    function translateToEnglish() {
+      document.querySelector('.hero-section h1').innerText = "Bringing Ideas to Light";
+      document.querySelector('.hero-section p').innerText = "Expert signage and printing solutions from Port Blair";
+      document.querySelector('#about h2').innerText = "About Us";
+      document.querySelector('#about p').innerText = "We are Digital Arts, a creative signage and advertising agency based in Port Blair. From LED boards to custom T-shirt printing, we turn your ideas into impactful visuals.";
+      document.querySelector('#services h2').innerText = "Our Services";
+      document.querySelectorAll('.card-title')[0].innerText = "Website Development";
+      document.querySelectorAll('.card-title')[1].innerText = "LED Sign Boards";
+      document.querySelectorAll('.card-title')[2].innerText = "Flex Printing";
+      document.querySelectorAll('.card-title')[3].innerText = "Acrylic Name Plates";
+      document.querySelectorAll('.card-title')[4].innerText = "CNC & Laser Cutting";
+      document.querySelectorAll('.card-title')[5].innerText = "Mug & T-Shirt Printing";
+      document.querySelector('#contact h2').innerText = "Contact Us";
+      document.querySelector('.contact-info').innerHTML = "<strong>Phone:</strong> 99332 11177<br><strong>Address:</strong> Sri Vijaya Puram, Port Blair<br><strong>Email:</strong> digitalarts@gmail.com";
+    }
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = document.querySelector('.contact-form');
+      form.reset();
+      alert("Message sent!");
+      return false;
+    }
+  </script>

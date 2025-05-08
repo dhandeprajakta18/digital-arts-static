@@ -1,0 +1,195 @@
+/* Navbar */
+.navbar {
+    background-color: #111;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+  
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+  
+.nav-links li {
+    margin: 0;
+}
+  
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.nav-links a:hover {
+    color: #ff5722;
+}
+
+.dropdown {
+    position: relative;
+}
+  
+.translate-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.translate-btn:hover {
+    background-color: #444;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1001;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+  
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+  
+.dropdown-menu a:hover {
+    color: #ff5722;
+}
+
+/* Adjust image size for panoramic effect */
+.about-image {
+    width: 100%; /* Make the image span the full width */
+    height: 300px; /* Adjust the height to be shorter for a panoramic look */
+    max-width: 100%; /* Ensure it doesn't exceed its container width */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    display: block;
+}
+
+/* About Section styles */
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content {
+    position: relative;
+}
+
+.about-image-container {
+    position: relative;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to the text */
+    border-radius: 10px;
+    width: 100%; /* Ensures full-width */
+    max-width: 600px; /* Optional: Restricts the width */
+}
+
+.about-text h2 {
+    font-size: 2rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Service Section - Card with Image Text */
+.service-box {
+    width: 30%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.service-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-box .card-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: black; /* Black background */
+    color: white; /* Text color white for contrast */
+    font-weight: bold;
+    opacity: 0.8; /* Optional: to make it slightly transparent */
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.service-box .card-overlay-text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Optional: Responsive design tweaks */
+@media screen and (max-width: 768px) {
+    .service-box {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-box {
+        width: 100%;
+    }
+}
